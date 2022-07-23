@@ -1,5 +1,4 @@
 {
- "myData": {
   "name": "my-app",
   "isFolder": true,
   "items": [
@@ -144,5 +143,4 @@
       "isFolder": false
     }
   ]
-}
 }

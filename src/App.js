@@ -1,9 +1,10 @@
-import './App.css';
+import Folder from './components/Folder';
+import JSON from "./db.json"
 
 function App() {
   return (
     <div className="App">
-      <h1>Initialize</h1>
+      <Folder json={JSON} />
     </div>
   );
 }
