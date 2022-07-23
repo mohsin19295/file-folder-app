@@ -1,0 +1,148 @@
+{
+ "myData": {
+  "name": "my-app",
+  "isFolder": true,
+  "items": [
+    {
+      "name": "node_modules",
+      "isFolder": true,
+      "items": [
+        {
+          "name": ".bin",
+          "isFolder": true,
+          "items":[
+            {
+            "name": "acorn",
+          "isFolder": false
+            },
+            {
+            "name": "acorn.cmd",
+          "isFolder": false
+            },
+            {
+            "name": "acorn.ps1",
+          "isFolder": false
+            },
+            {
+            "name": "many more",
+          "isFolder": false
+            }
+          ]
+        },
+        {
+          "name": ".cache",
+          "isFolder": true,
+          "items":[
+            {
+            "name": "babel-loader",
+          "isFolder": true,
+          "items" :[
+            {
+                "name": "0bd2f6a.json",
+          "isFolder": false
+            },
+            {
+                "name": "0j5f2r2i.json",
+          "isFolder": false
+            },
+            {
+                "name": "many more",
+          "isFolder": false
+            }
+          ]
+            },
+            {
+            "name": "eslintcache",
+          "isFolder": false
+          }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "public",
+      "isFolder": true,
+      "items": [
+        {
+          "name": "favicon.io",
+          "isFolder": false
+        },
+        {
+          "name": "index.html",
+          "isFolder": false
+        },
+        {
+          "name": "logo192.png",
+          "isFolder": false
+        },
+        {
+          "name": "logo512.png",
+          "isFolder": false
+        },
+        {
+          "name": "manifest.json",
+          "isFolder": false
+        },
+        {
+          "name": "roboto.txt",
+          "isFolder": false
+        }
+      ]
+    },
+    {
+      "name": "src",
+      "isFolder": true,
+      "items": [
+        {
+          "name": "App.css",
+          "isFolder": false
+        },
+        {
+          "name": "App.js",
+          "isFolder": false
+        },
+        {
+          "name": "App.test.js",
+          "isFolder": false
+        },
+        {
+          "name": "index.css",
+          "isFolder": false
+        },
+        {
+          "name": "index.js",
+          "isFolder": false
+        },
+        {
+          "name": "logo.svg",
+          "isFolder": false
+        },
+        {
+          "name": "reportWebVitals.js",
+          "isFolder": false
+        },
+        {
+          "name": "setupTest.js",
+          "isFolder": false
+        }
+      ]
+    },
+    {
+      "name": ".gitignore",
+      "isFolder": false
+    },
+    {
+      "name": "package-lock.json",
+      "isFolder": false
+    },
+    {
+      "name": "package.json",
+      "isFolder": false
+    },
+    {
+      "name": "README.md",
+      "isFolder": false
+    }
+  ]
+}
+}
