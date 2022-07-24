@@ -3,7 +3,6 @@ import styled from "styled-components"
 import { FcOpenedFolder } from "react-icons/fc";
 import { BsFileEarmarkRichtext } from "react-icons/bs";
 
-
 const Div = styled.div`
   background-color: #313133;
   color: #fff;
@@ -12,29 +11,36 @@ const Div = styled.div`
 `;
 
 const P = styled.p`
-    margin: 0;
-    padding: 0.3px;
-  &:hover {
-    background-color: #969696;
-  }
+margin: 0;
+padding: 0.3px;
+&:hover {
+  background-color: #969696;
+}
 `;
 
+const FlexDiv = styled.div`
+display: flex;
+gap: 5px;
+`
+
 const Folder = ({json}) => {
-    const [expand, setExpand] = useState(false)
+  const [expand, setExpand] = useState(false)
+  
+  const handleClick = () => {
+    setExpand(!expand);
+  }
     
     if (json.isFolder) {
         return (
           <Div>
-            <div style={{display: 'flex', gap: '5px'}}>
-              <FcOpenedFolder />
-                <P
-                  onClick={() => {
-                    setExpand(!expand);
-                  }}
-                >
-                  {json.name}
-                </P>
-            </div>
+            <FlexDiv>
+              <FcOpenedFolder onClick={handleClick} />
+              <P
+                onClick={ handleClick }
+              >
+                {json.name}
+              </P>
+            </FlexDiv>
             {json.items.map((exp) => (
               <Div
                 key={exp.name}
@@ -43,7 +49,10 @@ const Folder = ({json}) => {
                   paddingLeft: "10px",
                 }}
               >
-                <Folder json={exp} />
+                <FlexDiv>
+                  {!exp.isFolder ? <BsFileEarmarkRichtext /> : null}
+                  <Folder json={exp} />
+                </FlexDiv>
               </Div>
             ))}
           </Div>
